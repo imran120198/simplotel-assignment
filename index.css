@@ -1,0 +1,255 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+}
+
+#category {
+  display: flex;
+  flex-direction: row;
+  font-size: 26px;
+  font-weight: bold;
+  justify-content: space-around;
+  width: 60%;
+}
+
+#socialIcon {
+  display: flex;
+  padding-right: 15px;
+}
+
+.companyLogo {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#heroSection {
+  width: 100%;
+  height: 850px;
+  background-image: url("./Assets//heroimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#innerHeroSection {
+  position: absolute;
+  top: 710px;
+  left: 70px;
+  width: 450px;
+  height: 80px;
+  color: white;
+  z-index: 1;
+  font-size: 24px;
+  text-align: center;
+  background-image: linear-gradient(to right, black, grey);
+}
+
+#bottomhero {
+  background-color: #bbbbbd;
+  display: flex;
+  padding: 30px;
+  text-align: center;
+}
+
+.bottomHeroDesciption {
+  font-size: 22px;
+  margin: 18px;
+  line-height: 1.4;
+  width: 30%;
+}
+
+#roomSection {
+  background-color: #dcd5dc;
+  padding-bottom: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+#roomsection_heading {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+#roomSection_rooms {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#roomSection_rooms > div {
+  width: 380px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#roomSection_rooms > div:nth-child(1) {
+  align-items: flex-start;
+}
+
+#roomSection_rooms > div:nth-child(2) {
+  align-items: center;
+  text-align: center;
+}
+
+#roomSection_rooms > div:nth-child(3) {
+  align-items: flex-end;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  #navbar {
+    justify-content: space-between;
+    max-width: 95%;
+  }
+
+  #category {
+    display: none;
+  }
+
+  #socialIcon {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-right: 40px;
+  }
+
+  #heroSection {
+    width: 100%;
+    background-image: url("./Assets//heroimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #innerHeroSection {
+    position: absolute;
+    top: 710px;
+    left: 70px;
+    width: 250px;
+    height: 80px;
+    color: white;
+    z-index: 1;
+    font-size: 24px;
+  }
+
+  #bottomhero {
+    display: block;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .bottomHeroDesciption {
+    margin: 15px 0px 15px 0px;
+    line-height: 1.4;
+    width: 90%;
+  }
+
+  #roomsection_heading {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 26px;
+  }
+
+  #roomSection_rooms {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #roomSection_rooms > div {
+    width: 95%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navbar {
+    justify-content: space-between;
+    max-width: 95%;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  .menu-icon {
+    margin-right: 10px;
+  }
+
+  #roomsection_heading {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 26px;
+  }
+
+  #roomSection_rooms {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  #roomSection_rooms > div {
+    width: 95%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
