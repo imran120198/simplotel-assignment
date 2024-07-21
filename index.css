@@ -92,7 +92,6 @@ body {
   padding-bottom: 40px;
   width: 100%;
   margin: auto;
-  
 }
 
 #roomsection_heading {
@@ -112,7 +111,7 @@ body {
 }
 
 #roomSection_rooms > div {
-  width: 90%;
+  width: 380px;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -129,6 +128,7 @@ body {
 
 #roomSection_rooms > div:nth-child(3) {
   align-items: flex-end;
+  text-align: right;
 }
 
 img {
