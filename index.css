@@ -25,7 +25,7 @@ body {
 #category {
   display: flex;
   flex-direction: row;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bold;
   justify-content: space-around;
   width: 60%;
@@ -95,7 +95,7 @@ body {
 }
 
 #roomsection_heading {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding-top: 50px;
   font-weight: bolder;
@@ -111,8 +111,7 @@ body {
 }
 
 #roomSection_rooms > div {
-  width: 380px;
-  padding: 10px;
+  padding: 5px;
   font-weight: bold;
   font-size: 18px;
 }
